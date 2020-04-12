@@ -9,8 +9,10 @@ Get-AzureRmSubscription
 # This will list all the provider operations
 Get-AzureRmProviderOperation "Microsoft.Support/*" | FT Operation, Description -AutoSize
 
+# Get a Reader role as a template
 Get-AzureRmRoleDefinition -Name "Reader" | ConvertTo-Json | Out-File $home/clouddrive/ReaderSupportRole.json
 
+# Edit the template
 code $home/clouddrive/ReaderSupportRole.json
 ```
 
