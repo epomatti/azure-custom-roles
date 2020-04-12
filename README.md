@@ -59,6 +59,9 @@ Edit the file:
 Create new role:
 
 ```ps1
+# Creates the role using the template
 New-AzureRmRoleDefinition -InputFile $home/clouddrive/ReaderSupportRole.json
+
+# Show role
 Get-AzureRmRoleDefinition | ? {$_.IsCustom -eq $true} | FT Name, IsCustom
 ```
