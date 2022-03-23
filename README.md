@@ -2,6 +2,8 @@
 
 Custom role that allows read permissions on the subscription and to open tickets.
 
+Using PowerShell:
+
 ```ps1
 # Get and copy the subscription id
 Get-AzureRmSubscription
