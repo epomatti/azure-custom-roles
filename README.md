@@ -1,6 +1,6 @@
 # Azure custom roles
 
-Custom role that allows read permissions on the subscription and as well open tickets.
+Custom role that allows read permissions on the subscription and to open tickets.
 
 ```ps1
 # Get and copy the subscription id
